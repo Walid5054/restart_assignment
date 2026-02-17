@@ -20,6 +20,7 @@ const displayCatagory = (data) => {
     button.addEventListener('click', () => {LoadProducts(catagory); setActiveButton(catagory)});
     catagoryContainer.appendChild(button);
   })
+  setActiveButton('All');
 }
 
 function setActiveButton(category) {
@@ -38,6 +39,7 @@ function LoadProducts(category){
   
   let url 
   if(category === 'all'){
+  
     url = 'https://fakestoreapi.com/products';
     
   }
@@ -80,7 +82,7 @@ const displayProducts = (data) => {
     </div>
 
     <!-- Title -->
-    <div class="text-lg font-semibold text-gray-800 leading-snug">
+    <div class="text-lg font-semibold text-gray-800 leading-snug line-clamp-2">
       ${product.title}
     </div>
 
@@ -111,4 +113,4 @@ const displayProducts = (data) => {
 }
 
 loadCatarygory();
-// LoadProducts('all');
+LoadProducts('all');
