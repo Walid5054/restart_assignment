@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-  <header>
+   <header>
     <nav class="w-8/12 mx-auto py-5">
   <div class="flex justify-between items-center">
     
@@ -20,8 +20,8 @@
 
     <!-- Desktop Menu -->
     <ul class="hidden md:flex gap-6">
-      <li><a href="#" class="hover:text-blue-600 text-xl">Home</a></li>
-      <li><a href="products.html" class="hover:text-blue-600 text-xl">Products</a></li>
+      <li><a href="index.html" class="hover:text-blue-600 text-xl">Home</a></li>
+      <li><a href="#" class="hover:text-blue-600 text-xl">Products</a></li>
       <li><a href="#" class="hover:text-blue-600 text-xl">About</a></li>
       <li><a href="#" class="hover:text-blue-600 text-xl">Contact</a></li>
     </ul>
@@ -39,131 +39,30 @@
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden flex-col mt-4 space-y-3 md:hidden">
-    <a href="#" class="block">Home</a>
-    <a href="products.html" class="block">Products</a>
+    <a href="index.html" class="block">Home</a>
+    <a href="#" class="block">Products</a>
     <a href="#" class="block">About</a>
     <a href="#" class="block">Contact</a>
   </div>
 </nav>
 
-    <!-- banner section  -->
-<div 
-  class="w-full h-[600px] bg-cover bg-center relative"
-  style="background-image: url('./Assets/banner-image.png');">
-
-  <div class="absolute inset-0 bg-black/50"></div>
-
-  <!-- Content -->
-  <div class="w-11/12 mx-auto h-full flex justify-center items-center relative z-10">
-    <div class="w-1/2">
-      <h1 class="text-6xl font-bold text-white mb-5">
-        Best Collection For You
-      </h1>
-      <p class="text-lg text-white mb-5">
-Discover the latest trends in fasion, electronics, and more. Shop with <br> confidence and style at SwiftCart!
-      </p>
-      <button class="btn btn-primary">Shop Now</button>
-    </div>
-  </div>
-</div>
 
   </header>
-  <main class="w-11/12 mx-auto">
-    <section class="choose-us ">
- <!-- title  -->
-  <div class="lg:gap-10 lg:flex lg:flex-col lg:items-center lg:justify-center md:gap-3 md:flex md:flex-col md:items-center md:justify-center flex flex-col items-center gap-5 justify-center p-10">
-          <h1 class="text-center font-bold text-5xl">Why Choose Us</h1> 
-      <p class="text-center text-2xl">We Provide the best experience with top-notch services</p>
+  <main>
+ <section>
+  <h1 class="text-4xl font-bold text-center py-10">Our Products</h1>
+  <div id="load-Catagory" class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 px-4">
   </div>
 
-  <div class="cards flex justify-center items-center gap-10 w-11/12 mx-auto flex-wrap py-10">
-<div class="relative bg-white rounded-2xl p-8 pt-16 shadow-lg w-80 card-1">
-  
-  <!-- Floating Icon Box -->
-  <div class="absolute -top-8 left-8 bg-gray-100 p-5 rounded-2xl shadow-md">
-    <i class="fa-solid fa-truck text-3xl text-indigo-600"></i>
-  </div>
+ <section id="load-catagory-content" class="w-8/12 mx-auto grid grid-cols-3">
 
-  <!-- Card Content -->
-  <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-    Fast Delivery
-  </h3>
-  
-  <p class="text-gray-500 text-lg leading-relaxed">
-    Get your orders delivered to your doorstep quickly and efficiently.
-  </p>
-
-</div>
-<div class="relative bg-white rounded-2xl p-8 pt-16 shadow-lg w-80 card-2">
-  
-  <!-- Floating Icon Box -->
-  <div class="absolute -top-8 left-8 bg-gray-100 p-5 rounded-2xl shadow-md">
- <i class="fa-solid fa-headphones text-2xl text-indigo-600"></i>
-  </div>
-
-  <!-- Card Content -->
-  <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-    24/7 Support
-  </h3>
-  
-  <p class="text-gray-500 text-lg leading-relaxed">
-Our support team is availabble around the clock to assist you.
-  </p>
-
-</div>
-<div class="relative bg-white rounded-2xl p-8 pt-16 shadow-lg w-80 card-3">
-  
-  <!-- Floating Icon Box -->
-  <div class="absolute -top-8 left-8 bg-gray-100 p-5 rounded-2xl shadow-md">
-<i class="fa-solid fa-shield-halved text-2xl text-indigo-600"></i>
-  </div>
-
-  <!-- Card Content -->
-  <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-    Secure Payment
-  </h3>
-  
-  <p class="text-gray-500 text-lg leading-relaxed">
-Experience safe and secure transactions with our trusted payment gateways.
-  </p>
-
-</div>
-<div class="relative bg-white rounded-2xl p-8 pt-16 shadow-lg w-80 card-4">
-  
-  <!-- Floating Icon Box -->
-  <div class="absolute -top-8 left-8 bg-gray-100 p-5 rounded-2xl shadow-md">
-<i class="fa-solid fa-rotate text-2xl text-indigo-600"></i>
-  </div>
-
-  <!-- Card Content -->
-  <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-    Easy Returns
-  </h3>
-  
-  <p class="text-gray-500 text-lg leading-relaxed">
-   Not satisfied with your purchase? Enjoy hassle-free returns and exchanges.
-  </p>
-
-</div>
-
-  </div>
-    </section>
-
-<section class="trending w-11/12 lg:w-8/12 mx-auto py-10">
-  
-  <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center lg:text-left">
-    Trending Now
-  </h1>
-
-  <div 
-    id="trending-products" 
-    class="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 md:grid-cols-2 md:gap-4 flex justify-between mt-10">
-  </div>
-
-</section>
+ </section>
 
   </main>
-<footer class="bg-gray-900 text-gray-300 w-full">
+
+
+
+  <footer class="bg-gray-900 text-gray-300 w-full">
   <div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
     
@@ -249,72 +148,7 @@ Experience safe and secure transactions with our trusted payment gateways.
     </div>
   </div>
 </footer>
-
-
+<script src="script.js"></script>
 <script src="menu.js"></script>
-  <!-- trending products fetch script  -->
-  <script>
-   const container = document.getElementById('trending-products');
-   fetch('https://fakestoreapi.com/products').then(res=>res.json()).then(data=>{
-    const trendingProducts = data.slice(0, 3);
-    trendingProducts.forEach(product =>{
-      const card = document.createElement('div');
-      card.classList.add("bg-white", "rounded-lg", "shadow-md", "p-4", "flex", "flex-col", "items-center");
-      card.innerHTML = `  <div class="w-80 bg-white rounded-2xl object-cover overflow-hidden">
-
-  <!-- Image Section -->
-  <div class="bg-gray-100 flex items-center justify-center h-72">
-    <img src="${product.image}" alt="${product.title}"
-         class="h-60 object-contain" />
-  </div>
-
-  <!-- Content Section -->
-  <div class="p-5 space-y-4">
-
-    <!-- Category + Rating -->
-    <div class="flex justify-between items-center">
-
-      <div class="bg-indigo-100 text-indigo-600 text-sm px-3 py-1 rounded-full">
-        ${product.category}
-      </div>
-
-      <div class="flex items-center gap-1 text-sm text-gray-500">
-        <div class="text-yellow-500">★</div>
-        <div>${product.rating.rate} (${product.rating.count})</div>
-      </div>
-
-    </div>
-
-    <!-- Title -->
-    <div class="text-lg font-semibold text-gray-800 leading-snug">
-      ${product.title}
-    </div>
-
-    <!-- Price -->
-    <div class="text-2xl font-bold text-gray-900">
-      $109.95
-    </div>
-
-    <!-- Buttons -->
-    <div class="flex gap-3 pt-2">
-
-      <div class="flex-1 border rounded-xl py-3 text-center text-gray-600 hover:bg-gray-100 cursor-pointer">
-        👁 Details
-      </div>
-
-      <div class="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl py-3 text-center cursor-pointer">
-        🛒 Add
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-      `;;
-      container.appendChild(card);
-    })
-   })
-  </script>
 </body>
 </html>
