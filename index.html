@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body>z
   <header>
     <nav class="w-8/12 mx-auto py-5">
   <div class="flex justify-between items-center">
@@ -29,7 +29,8 @@
     <!-- Right Section -->
     <div class="flex items-center gap-4">
       <i class="fa-solid fa-cart-shopping text-xl"></i>
-
+<span id="cart-count"     class="absolute -top-2 -right-3 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full hidden">
+    >0</span>
       <!-- Burger Button -->
       <button id="menu-btn" class="md:hidden text-2xl">
         <i class="fa-solid fa-bars"></i>
@@ -249,8 +250,22 @@ Experience safe and secure transactions with our trusted payment gateways.
     </div>
   </div>
 </footer>
+    <dialog id="product_modal" class="modal">
+  <div class="modal-box max-w-3xl">
+    
+    <!-- Modal Content Will Be Injected Here -->
+    <div id="modal-content"></div>
 
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
 
+  </div>
+</dialog>
+
+<script src="script.js"></script>
 <script src="menu.js"></script>
   <!-- trending products fetch script  -->
   <script>
@@ -298,11 +313,11 @@ Experience safe and secure transactions with our trusted payment gateways.
     <!-- Buttons -->
     <div class="flex gap-3 pt-2">
 
-      <div class="flex-1 border rounded-xl py-3 text-center text-gray-600 hover:bg-gray-100 cursor-pointer">
+      <div class="details-btn flex-1 border rounded-xl py-3 text-center text-gray-600 hover:bg-gray-100 cursor-pointer">
         👁 Details
       </div>
 
-      <div class="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl py-3 text-center cursor-pointer">
+      <div class="add-to-cart flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl py-3 text-center cursor-pointer">
         🛒 Add
       </div>
 
@@ -316,5 +331,9 @@ Experience safe and secure transactions with our trusted payment gateways.
     })
    })
   </script>
+
+
+
+
 </body>
 </html>

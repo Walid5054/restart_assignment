@@ -70,14 +70,19 @@ https://fakestoreapi.com/products/1
 > **⚠️ Warning:** Do not use any AI tools to answer these questions. You must write the answers in **Bangla**.
 
 #### 1) What is the difference between `null` and `undefined`?
+ans: Null is object type and undefined is undefined typed
 
 #### 2) What is the use of the `map()` function in JavaScript? How is it different from `forEach()`?
+ans: map returns an array forEach iterates through an array
 
 #### 3) What is the difference between `==` and `===`?
+ans: == does not care about the datatypes but === compares the datatype also
 
 #### 4) What is the significance of `async`/`await` in fetching API data?
+ans: If we want to load a data before another one we can use async await to make it sychronous
 
 #### 5) Explain the concept of Scope in JavaScript (Global, Function, Block).
+ans: with global scop we can use the variable inside or outside the fuction. the function has {} outside this bracket we can not change the variables that is declared with let or const 
 
 ## ⚡ Dynamic Features & Functionalities
 

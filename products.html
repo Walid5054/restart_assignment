@@ -29,6 +29,8 @@
     <!-- Right Section -->
     <div class="flex items-center gap-4">
       <i class="fa-solid fa-cart-shopping text-xl"></i>
+<span id="cart-count" class="absolute bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full hidden">
+    >0</span>
 
       <!-- Burger Button -->
       <button id="menu-btn" class="md:hidden text-2xl">
@@ -56,7 +58,9 @@
 
  <section id="load-catagory-content" class="w-8/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-5 md:gap-5 gap-6 mb-10">
 
+
  </section>
+
 
   </main>
 
@@ -148,6 +152,20 @@
     </div>
   </div>
 </footer>
+<dialog id="product_modal" class="modal">
+  <div class="modal-box max-w-3xl">
+    
+    <div id="modal-content"></div>
+
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+
+  </div>
+</dialog>
+
 <script src="script.js"></script>
 <script src="menu.js"></script>
 </body>
